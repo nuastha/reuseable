@@ -10,8 +10,8 @@ createRoot(document.getElementById('root')!).render(
     <KindeProvider
       clientId="bbb043195c4f4df7a1c5955b61dc9c24"
       domain="https://studentyou.kinde.com"
-      redirectUri="http://localhost:5173"
-      logoutUri="http://localhost:5173"
+      redirectUri={process.env.NODE_ENV === 'development' ? "http://localhost:5173" : "https://studentyou.vercel.app"}
+      logoutUri={process.env.NODE_ENV === 'development' ? "http://localhost:5173" : "https://studentyou.vercel.app"}
     >
       <ToDoContextProvider>
         <App />
