@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    background-color: #928c8c;
+}
+
+@media (max-width: 950px) {
+    h1 {
+        top: 5%;
+    }
+}
+
+@media (max-width: 916px) {
+    h1 {
+        top: 3.5%;
+    }
+}
+
+@media (max-width: 883px) {
+    h1 {
+        top: 2.5%;
+    }
+}
+
+@media (max-width: 850px) {
+    h1 {
+        top: 0%;
+    }
+}
+
+@media (max-width: 800px) {
+    h1 {
+        top: -3%;
+    }
+}
